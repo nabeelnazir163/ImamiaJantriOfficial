@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Activities.duaActivity"
+    android:weightSum="2"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_bg_gradient"
+        >
+
+
+        <ImageView
+            android:id="@+id/backarraow_iv_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back_arrow"
+            android:src="@drawable/ic_back_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/duas"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/ten"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_yellow"
+        >
+
+        <TextView
+            android:paddingTop="@dimen/twenty"
+            android:id="@+id/dua_arbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty"
+            android:textSize="30sp"
+            android:text="اللَّهُمَّ بِاسْـمِكَ أَمُوتُ وَأَحْيَا"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/dua_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty"
+            android:textSize="24sp"
+            android:text="In Your name O Allah, I live and die."
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            />
+
+    </ScrollView>
+
+</LinearLayout>
